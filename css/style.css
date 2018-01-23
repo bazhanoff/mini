@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-LightItalic.woff") format("woff"), url("../fonts/OpenSans-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+.main-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.page__container {
+  flex-grow: 1;
+}
+.footer {
+  flex: none;
+}
+.home {
+  padding-top: 8rem;
+  padding-bottom: 18rem;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+}
+.home__content {
+  margin-top: 21rem;
+  color: #fff;
+  text-align: center;
+}
+.home__caption-about {
+  display: block;
+  font-weight: 300;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+}
+.home__caption-srvices {
+  display: block;
+  font-weight: 700;
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+.home__caption-works {
+  display: block;
+  font-weight: 300;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.home__button {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 9.6rem;
+  padding-left: 3.8rem;
+  padding-right: 3.8rem;
+}
+.home__switches {
+  margin-top: 13rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.header__logo {
+  align-self: center;
+}
+.menu {
+  align-self: center;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.menu__separator {
+  margin-left: 3.8rem;
+  margin-right: 3.8rem;
+  cursor: default;
+}
+.menu__link {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  transition: color .2s;
+}
+.menu__link:hover,
+.menu__link:focus {
+  color: #000;
+}
+.button {
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #fff;
+  color: #000;
+  border: 0.2rem solid #f39c12;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+.button:hover,
+.button:focus {
+  background: #f39c12;
+  color: #fff;
+  transition: background-color 0.2s, color 0.2s;
+}
+.switch {
+  padding: .6rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #5b6770;
+  transition: background 0.2s ease-in;
+}
+.switch:hover,
+.switch:active {
+  background: #fff;
+  cursor: pointer;
+}
+.switch_active {
+  background: #fff;
+}
+.title {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.title_xl {
+  font-size: 3rem;
+}
+.section {
+  margin-top: 8.9rem;
+}
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.section__title {
+  padding-right: 2rem;
+  margin-right: 2rem;
+  position: relative;
+}
+.section__title:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-right: 0.4rem solid #f39c12;
+}
+.about__description {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1401px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media screen and (max-width: 399px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+body {
+  margin: 0;
+  font-family: "OpenSans", sans-serif;
+  font-size: 1.6rem;
+  background: #fff;
+}
+h1 {
+  font-size: 1.75rem;
+}
+h2 {
+  font-size: 1.625rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.375rem;
+}
+p {
+  margin-bottom: 1rem;
+  font-family: Arial;
+}
+p:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}

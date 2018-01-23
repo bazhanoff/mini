@@ -1,0 +1,152 @@
+@font-face{
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.woff") format("woff"),
+         url("../fonts/OpenSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Bold.woff") format("woff"),
+         url("../fonts/OpenSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Italic.woff") format("woff"),
+         url("../fonts/OpenSans-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Light.woff") format("woff"),
+         url("../fonts/OpenSans-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-LightItalic.woff") format("woff"),
+         url("../fonts/OpenSans-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+         url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.woff") format("woff"),
+         url("../fonts/Lato-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@main-color: #f39c12;
+@white-color: #fff;
+@black-color: #000;
+
+
+@import "blocks/main-container.less";
+@import "blocks/page.less";
+@import "blocks/home.less";
+@import "blocks/header.less";
+@import "blocks/menu.less";
+@import "blocks/button.less";
+@import "blocks/switch.less";
+@import "blocks/title.less";
+@import "blocks/section.less";
+@import "blocks/about.less";
+// @import "blocks/title.less";
+// @import "blocks/services.less";
+// @import "blocks/portfolio.less";
+// @import "blocks/skill.less";
+// @import "blocks/posts.less";
+// @import "blocks/blog.less";
+// @import "blocks/contact.less";
+
+@media screen and (min-width: 1401px){
+
+    html{
+        font-size: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px){
+
+    html{
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px){
+
+    html{
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (max-width: 399px){
+
+    html{
+    font-size: 52.5%;
+  }
+}
+
+body{
+    margin: 0;
+    font-family: "OpenSans", sans-serif;
+    font-size: 1.6rem;
+    background: #fff;
+}
+
+h1{
+    font-size: 1.75rem;
+}
+
+h2{
+    font-size: 1.625rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.375rem;
+}
+
+p{
+    margin-bottom: 1rem;
+    font-family: Arial;
+}
+
+p:last-child{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img{
+    display: inline-block;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+// a:focus, a:hover{
+//     color: #fd5433;
+// }

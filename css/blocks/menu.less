@@ -1,0 +1,29 @@
+.menu{
+    align-self: center;
+}
+
+.menu__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.menu__separator{
+    margin-left: 3.8rem;
+    margin-right: 3.8rem;
+    cursor: default;
+}
+
+.menu__link{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color .2s;
+
+    &:hover, &:focus{
+        color: @black-color;
+    }
+}
