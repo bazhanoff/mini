@@ -76,20 +76,47 @@
 .home__caption-about {
   display: block;
   font-weight: 300;
-  font-size: 4.5rem;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1170px) {
+  .home__caption-about {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 1169px) {
+  .home__caption-about {
+    font-size: 3.5rem;
+  }
 }
 .home__caption-services {
   display: block;
   font-weight: 700;
-  font-size: 7rem;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1170px) {
+  .home__caption-services {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 1169px) {
+  .home__caption-services {
+    font-size: 4.5rem;
+  }
 }
 .home__caption-works {
   display: block;
   font-weight: 300;
-  font-size: 4rem;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1170px) {
+  .home__caption-works {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1169px) {
+  .home__caption-works {
+    font-size: 3rem;
+  }
 }
 .home__button {
   font-size: 1.5rem;
@@ -284,7 +311,6 @@
 @media screen and (max-width: 999px) {
   .section__grid {
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 .section__additional {
@@ -385,10 +411,44 @@
   color: #fff;
 }
 .about__additional-caption {
-  font-size: 4.5rem;
+  position: relative;
 }
-.about__additional-quote {
+.about__additional-caption:before {
+  display: inline;
+  content: "“";
   font-size: 11rem;
+}
+@media screen and (max-width: 1097px) {
+  .about__additional-caption:before {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 1097px) {
+  .about__additional-caption:after {
+    display: inline;
+    content: "“";
+    font-size: 4.5rem;
+  }
+}
+@media screen and (min-width: 1098px) {
+  .about__additional-quote {
+    position: relative;
+  }
+  .about__additional-quote:after {
+    display: inline;
+    content: "“";
+    font-size: 11rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .about__additional-caption {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 999px) {
+  .about__additional-caption {
+    font-size: 3.5rem;
+  }
 }
 .about__additional-author {
   display: inline-block;
@@ -437,9 +497,16 @@
   border: none;
   background: #e6e6e6;
 }
+@media screen and (min-width: 500px) {
+  .team__grid {
+    justify-content: space-between;
+  }
+}
 .team__column {
   text-align: center;
+  padding: 0 1.9rem 1.5rem;
   transition: background-color 0.2s;
+  box-sizing: border-box;
 }
 .team__column:hover,
 .team__column:focus {
@@ -461,7 +528,12 @@
     width: 20%;
   }
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 999px) and (min-width: 500px) {
+  .team__column {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 499px) {
   .team__column {
     flex-grow: 1;
   }
@@ -493,6 +565,83 @@
 }
 .team__description {
   color: #595959;
+}
+.team__icon {
+  width: 18px;
+  fill: #999999;
+}
+.team__icon:hover,
+.team__icon:focus {
+  fill: #f39c12;
+}
+@media screen and (min-width: 500px) {
+  .team__additional-grid {
+    justify-content: space-between;
+  }
+}
+.team__additional-column {
+  text-align: center;
+}
+.team__additional-column:hover .team__additional-icon-circle,
+.team__additional-column:focus .team__additional-icon-circle {
+  fill: #fff;
+  stroke: #fff;
+}
+.team__additional-column:hover .team__additional-icon-inner,
+.team__additional-column:focus .team__additional-icon-inner {
+  fill: #f39c12;
+}
+@media screen and (max-width: 749px) and (min-width: 500px) {
+  .team__additional-column {
+    width: 32%;
+    margin-bottom: 2.3em;
+  }
+  .team__additional-column:not(:nth-child(2n)) {
+    margin-right: 3%;
+  }
+}
+@media screen and (max-width: 499px) {
+  .team__additional-column {
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom: 2.3em;
+  }
+}
+.team__additional-icon {
+  width: 176px;
+}
+.team__additional-icon-circle {
+  fill: #f39c12;
+  stroke: #f39c12;
+  transition: fill .2s,
+                stroke .2s;
+}
+.team__additional-icon-inner {
+  fill: #fff;
+  transition: fill .2s;
+}
+.team__additional-info {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  cursor: default;
+}
+.team__additional-total {
+  display: block;
+  font-size: 4.5rem;
+}
+.team__additional-text {
+  display: block;
+  font-size: 2.5rem;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.social__link {
+  margin-right: 1.9rem;
+  transition: fill .2s;
 }
 @media screen and (min-width: 1401px) {
   html {

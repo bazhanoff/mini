@@ -1,6 +1,15 @@
+@media screen and (min-width: 500px){
+
+    .team__grid{
+        justify-content: space-between;
+    }
+}
+
 .team__column{
     text-align: center;
+    padding: 0 1.9rem 1.5rem;
     transition: background-color .2s;
+    box-sizing: border-box;
 
     &:hover, &:focus{
         position: relative;
@@ -25,7 +34,14 @@
     }
 }
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 999px) and (min-width: 500px){
+
+    .team__column{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 499px){
 
     .team__column{
         flex-grow: 1;
@@ -63,4 +79,89 @@
 
 .team__description{
     color: @balanced-grey-color;
+}
+
+.team__icon{
+    width: 18px;
+    fill: #999999;
+
+    &:hover, &:focus{
+        fill: @main-color;
+    }
+}
+
+@media screen and (min-width: 500px){
+
+    .team__additional-grid{
+        justify-content: space-between;
+    }
+}
+
+.team__additional-column{
+    text-align: center;
+}
+
+.team__additional-column:hover .team__additional-icon-circle,
+.team__additional-column:focus .team__additional-icon-circle{
+    fill: @white-color;
+    stroke: @white-color;
+}
+
+.team__additional-column:hover .team__additional-icon-inner,
+.team__additional-column:focus .team__additional-icon-inner{
+    fill: @main-color;
+}
+
+@media screen and (max-width: 749px) and (min-width: 500px){
+
+    .team__additional-column{
+        width: 32%;
+        margin-bottom: 2.3em;
+    }
+
+    .team__additional-column:not(:nth-child(2n)){
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 499px){
+
+    .team__additional-column{
+        width: 100%;
+        flex-grow: 1;
+        margin-bottom: 2.3em;
+    }
+}
+
+.team__additional-icon{
+    width: 176px;
+}
+
+.team__additional-icon-circle{
+    fill: @main-color;
+    stroke: @main-color;
+    transition: fill .2s,
+                stroke .2s;
+}
+
+.team__additional-icon-inner{
+    fill: @white-color;
+    transition: fill .2s;
+}
+
+.team__additional-info{
+    text-align: center;
+    color: @white-color;
+    font-weight: 700;
+    cursor: default;
+}
+
+.team__additional-total{
+    display: block;
+    font-size: 4.5rem;
+}
+
+.team__additional-text{
+    display: block;
+    font-size: 2.5rem;
 }
