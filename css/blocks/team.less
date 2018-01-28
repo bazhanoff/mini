@@ -5,10 +5,16 @@
     }
 }
 
+@media screen and (min-width: 750px){
+
+    .team__column{
+        transition: background-color .2s;
+    }
+}
+
 .team__column{
     text-align: center;
     padding: 0 1.9rem 1.5rem;
-    transition: background-color .2s;
     box-sizing: border-box;
 
     &:hover, &:focus{
@@ -140,13 +146,25 @@
 .team__additional-icon-circle{
     fill: @main-color;
     stroke: @main-color;
-    transition: fill .2s,
-                stroke .2s;
+}
+
+@media screen and (min-width: 750px){
+
+    .team__additional-icon-circle{
+        transition: fill .2s,
+                    stroke .2s;
+    }
 }
 
 .team__additional-icon-inner{
     fill: @white-color;
-    transition: fill .2s;
+}
+
+@media screen and (min-width: 750px){
+
+    .team__additional-icon-inner{
+        transition: fill .2s;
+    }
 }
 
 .team__additional-info{
