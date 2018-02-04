@@ -1,0 +1,66 @@
+.maeda{
+    text-align: center;
+    font-weight: 700;
+    color: @white-color;
+}
+
+.maeda__quote{
+    positon: relative;
+    font-size: 4.5rem;
+    margin: 0;
+}
+
+@media screen and (min-width: 1098px){
+
+    .maeda__quote:before{
+        display: inline;
+        content: "“";
+        font-size: 11rem;
+    }
+}
+
+@media screen and (max-width: 1097px){
+
+    .maeda__quote:before{
+        display: inline;
+        content: "“";
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 1097px){
+
+    .maeda__quote:after{
+        display: inline;
+        content: "“";
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 1098px){
+
+    .maeda__separate:after{
+        display: inline;
+        content: "“";
+        font-size: 11rem;
+    }
+}
+
+.maeda__name{
+    display: inline-block;
+    font-size: 2.4rem;
+    margin-top: 3rem;
+    padding-top: 2.1rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.maeda__name:after{
+    position: absolute;
+    content: "";
+    width: 40%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-top: .4rem solid @main-color;
+}

@@ -45,89 +45,10 @@
 @media screen and (max-width: 999px){
 
     .about__skills{
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
 
         &:not(:nth-child(1)){
             margin-top: 5.5rem;
         }
     }
-}
-
-.about__additional-content{
-    text-align: center;
-    font-weight: 700;
-    color: @white-color;
-}
-
-.about__additional-caption{
-    position: relative;
-}
-
-.about__additional-caption:before{
-    display: inline;
-    content: "“";
-    font-size: 11rem;
-}
-
-@media screen and (max-width: 1097px){
-
-    .about__additional-caption:before{
-        font-size: 4.5rem;
-    }
-}
-
-@media screen and (max-width: 1097px){
-
-    .about__additional-caption:after{
-        display: inline;
-        content: "“";
-        font-size: 4.5rem;
-    }
-}
-
-@media screen and (min-width: 1098px){
-
-    .about__additional-quote{
-        position: relative;
-    }
-
-    .about__additional-quote:after{
-        display: inline;
-        content: "“";
-        font-size: 11rem;
-    }
-}
-
-
-@media screen and (min-width: 1000px){
-
-    .about__additional-caption{
-        font-size: 4.5rem;
-    }
-}
-
-@media screen and (max-width: 999px){
-
-    .about__additional-caption{
-        font-size: 3.5rem;
-    }
-}
-
-.about__additional-author{
-    display: inline-block;
-    font-size: 2.4rem;
-    margin-top: 3rem;
-    padding-top: 2.1rem;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.about__additional-author:after{
-    position: absolute;
-    content: "";
-    width: 40%;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-top: .4rem solid @main-color;
 }

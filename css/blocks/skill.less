@@ -5,12 +5,15 @@
 
 .skill__name{
     text-transform: uppercase;
-}
+    margin-right: .5rem;
 
-.skill__separator{
-    color: #bfbfbf;
-    font-weight: 700;
-    margin: 0 .5rem;
+    &:after{
+        display: inline;
+        content: "/";
+        color: #bfbfbf;
+        font-weight: 700;
+        margin-left: .2rem;
+    }
 }
 
 .skill__percent{

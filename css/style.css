@@ -54,6 +54,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 340px;
 }
 .page__container {
   flex-grow: 1;
@@ -320,73 +321,11 @@
 }
 @media screen and (max-width: 999px) {
   .about__skills {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
   .about__skills:not(:nth-child(1)) {
     margin-top: 5.5rem;
   }
-}
-.about__additional-content {
-  text-align: center;
-  font-weight: 700;
-  color: #fff;
-}
-.about__additional-caption {
-  position: relative;
-}
-.about__additional-caption:before {
-  display: inline;
-  content: "“";
-  font-size: 11rem;
-}
-@media screen and (max-width: 1097px) {
-  .about__additional-caption:before {
-    font-size: 4.5rem;
-  }
-}
-@media screen and (max-width: 1097px) {
-  .about__additional-caption:after {
-    display: inline;
-    content: "“";
-    font-size: 4.5rem;
-  }
-}
-@media screen and (min-width: 1098px) {
-  .about__additional-quote {
-    position: relative;
-  }
-  .about__additional-quote:after {
-    display: inline;
-    content: "“";
-    font-size: 11rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .about__additional-caption {
-    font-size: 4.5rem;
-  }
-}
-@media screen and (max-width: 999px) {
-  .about__additional-caption {
-    font-size: 3.5rem;
-  }
-}
-.about__additional-author {
-  display: inline-block;
-  font-size: 2.4rem;
-  margin-top: 3rem;
-  padding-top: 2.1rem;
-  text-transform: uppercase;
-  position: relative;
-}
-.about__additional-author:after {
-  position: absolute;
-  content: "";
-  width: 40%;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  border-top: 0.4rem solid #f39c12;
 }
 .story__content {
   position: relative;
@@ -427,7 +366,7 @@
   font-size: 2rem;
 }
 @media screen and (max-width: 999px) {
-  .story__image {
+  .story__imgbox {
     margin-top: 5.5rem;
     flex-grow: 1;
   }
@@ -446,13 +385,18 @@
     width: 60%;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1000px) {
   .skills__content {
-    padding-left: 15rem;
+    padding-left: 12rem;
   }
 }
 @media screen and (max-width: 999px) {
-  .skills__image {
+  .skills__content {
+    margin-top: 5.5rem;
+  }
+}
+@media screen and (max-width: 999px) {
+  .skills__imgbox {
     margin-top: 5.5rem;
     flex-grow: 1;
   }
@@ -464,6 +408,14 @@
 }
 .skills__info {
   position: relative;
+}
+@media screen and (min-width: 750px) {
+  .skills__info {
+    padding-left: 16rem;
+  }
+}
+.skills__text {
+  margin-top: 2rem;
 }
 @media screen and (min-width: 750px) {
   .skills__icon {
@@ -481,17 +433,26 @@
     width: 6.1rem;
   }
 }
+.skills__bars {
+  margin-top: 7rem;
+}
+.skills__bar:not(:first-child) {
+  margin-top: 2.2rem;
+}
 .skill__hint {
   display: flex;
   font-weight: 600;
 }
 .skill__name {
   text-transform: uppercase;
+  margin-right: .5rem;
 }
-.skill__separator {
+.skill__name:after {
+  display: inline;
+  content: "/";
   color: #bfbfbf;
   font-weight: 700;
-  margin: 0 .5rem;
+  margin-left: .2rem;
 }
 .skill__percent {
   color: #4c4c4c;
@@ -669,6 +630,61 @@
   margin-right: 1.9rem;
   transition: fill .2s;
 }
+.maeda {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+.maeda__quote {
+  positon: relative;
+  font-size: 4.5rem;
+  margin: 0;
+}
+@media screen and (min-width: 1098px) {
+  .maeda__quote:before {
+    display: inline;
+    content: "“";
+    font-size: 11rem;
+  }
+}
+@media screen and (max-width: 1097px) {
+  .maeda__quote:before {
+    display: inline;
+    content: "“";
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 1097px) {
+  .maeda__quote:after {
+    display: inline;
+    content: "“";
+    font-size: 4.5rem;
+  }
+}
+@media screen and (min-width: 1098px) {
+  .maeda__separate:after {
+    display: inline;
+    content: "“";
+    font-size: 11rem;
+  }
+}
+.maeda__name {
+  display: inline-block;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  padding-top: 2.1rem;
+  text-transform: uppercase;
+  position: relative;
+}
+.maeda__name:after {
+  position: absolute;
+  content: "";
+  width: 40%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-top: 0.4rem solid #f39c12;
+}
 @media screen and (min-width: 1401px) {
   html {
     font-size: 70%;
@@ -695,6 +711,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   background: #fff;
+  color: #000;
 }
 h1 {
   font-size: 1.75rem;
