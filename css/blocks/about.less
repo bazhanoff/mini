@@ -1,112 +1,30 @@
-.about__story-column{
-    position: relative;
-    box-sizing: border-box;
+.about__story{
+    display: flex;
+    border-bottom: .2rem solid @light-grey-color;
 }
 
 @media screen and (min-width: 1000px){
 
-    .about__story-column{
-        width: 60%;
-    }
-}
+    .about__story{
+        padding-bottom: 12.4rem;
+        justify-content: space-between;
 
-@media screen and (min-width: 750px){
-
-    .about__story-column{
-        padding-left: 15rem;
-    }
-}
-
-@media screen and (min-width: 750px){
-
-    .about__icon{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 12.3rem;
-    }
-}
-
-@media screen and (max-width: 749px){
-
-    .about__icon{
-        position: absolute;
-        right: 10%;
-        top: -2rem;
-        width: 6.1rem;
-    }
-}
-
-.about__story-info{
-    margin-top: 2rem;
-}
-
-.about__story-text{
-    margin-bottom: 2.2rem;
-    color: @red-color;
-    font-size: 2rem;
-}
-
-@media screen and (max-width: 999px){
-
-    .about__story-img{
-        margin-top: 5.5rem;
-        flex-grow: 1;
+        &:not(:nth-child(1)){
+            margin-top: 11.5rem;
+        }
     }
 }
 
 @media screen and (max-width: 999px){
 
-    .about__img{
-        width: 100%;
+    .about__story{
+        padding-bottom: 5.5rem;
+        flex-wrap: wrap;
+
+        &:not(:nth-child(1)){
+            margin-top: 5.5rem;
+        }
     }
-}
-
-@media screen and (min-width: 1000px){
-
-    .about__skills-column{
-        width: 47%;
-    }
-}
-
-@media screen and (max-width: 749px){
-
-    .about__skills-column{
-        margin-top: 5.5rem;
-    }
-}
-
-@media screen and (max-width: 999px){
-
-    .about__skills-img{
-        margin-top: 5.5rem;
-        text-align: center;
-        flex-grow: 1;
-        order: 1;
-    }
-}
-
-.about__skills-description{
-    position: relative;
-}
-
-@media screen and (min-width: 750px){
-
-    .about__skills-description{
-        padding-left: 15rem;
-    }
-}
-
-.about__skills-info{
-    margin-top: 2rem;
-}
-
-.about__skills{
-    margin-top: 5.5rem;
-}
-
-.about__skill{
-    margin-top: 3rem;
 }
 
 .about__additional-content{
@@ -168,14 +86,6 @@
         font-size: 3.5rem;
     }
 }
-
-// @media screen and (min-width: 1000px){
-//
-//     .about__additional-quote{
-//         font-size: 11rem;
-//     }
-// }
-
 
 .about__additional-author{
     display: inline-block;
