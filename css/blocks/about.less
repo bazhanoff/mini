@@ -27,6 +27,32 @@
     }
 }
 
+.about__skills{
+    display: flex;
+}
+
+@media screen and (min-width: 1000px){
+
+    .about__skills{
+        justify-content: space-between;
+
+        &:not(:nth-child(1)){
+            margin-top: 11.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 999px){
+
+    .about__skills{
+        flex-wrap: wrap;
+
+        &:not(:nth-child(1)){
+            margin-top: 5.5rem;
+        }
+    }
+}
+
 .about__additional-content{
     text-align: center;
     font-weight: 700;
